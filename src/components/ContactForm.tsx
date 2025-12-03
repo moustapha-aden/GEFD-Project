@@ -55,10 +55,9 @@ export function ContactForm({
   const onSubmit = async (data: ContactFormData) => {
     // Check if EmailJS is configured
     if (!emailjsServiceId || !emailjsTemplateId || !emailjsPublicKey) {
-      toast.error(
+      throw new Error(
         "Configuration EmailJS manquante. Veuillez configurer les variables d'environnement."
       );
-      return;
     }
 
     try {
@@ -81,11 +80,7 @@ export function ContactForm({
 
       // Success notification
       toast.success(
-        'Message envoyé avec succès ! Nous vous répondrons bientôt.',
-        {
-          description:
-            'Votre message a été reçu et sera traité dans les plus brefs délais.',
-        }
+        'Message envoyé avec succès ! Nous vous répondrons bientôt.'
       );
 
       // Reset form
@@ -182,24 +177,26 @@ export function ContactForm({
         )}
       </div>
 
-      <Button
-        type="submit"
-        size="lg"
-        className="w-full sm:w-auto"
-        disabled={isSubmitting}
-      >
-        {isSubmitting ? (
-          <>
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            Envoi en cours...
-          </>
-        ) : (
-          <>
-            <Send className="mr-2 h-4 w-4" />
-            Envoyer le message
-          </>
-        )}
-      </Button>
+      <div className="flex justify-end">
+        <Button
+          type="submit"
+          size="lg"
+          className="w-full sm:w-auto"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Envoi en cours...
+            </>
+          ) : (
+            <>
+              <Send className="mr-2 h-4 w-4" />
+              Envoyer le message
+            </>
+          )}
+        </Button>
+      </div>
     </form>
   );
 }
