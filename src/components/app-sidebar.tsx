@@ -2,22 +2,22 @@
 
 import * as React from 'react';
 import {
-  AudioWaveform,
-  BookOpen,
-  Bot,
-  Command,
-  Frame,
-  GalleryVerticalEnd,
-  Map,
-  PieChart,
-  Settings2,
   SquareTerminal,
+  FileText,
+  UserCircle,
+  MessageSquare,
+  ListChecks,
+  AlertTriangle,
+  Hourglass,
+  Briefcase,
+  Mail,
+  Video,
+  GalleryVerticalEnd,
+  AudioWaveform,
+  Command,
 } from 'lucide-react';
 
 import { NavMain } from '@/components/nav-main';
-import { NavProjects } from '@/components/nav-projects';
-import { NavUser } from '@/components/nav-user';
-import { TeamSwitcher } from '@/components/team-switcher';
 import {
   Sidebar,
   SidebarContent,
@@ -26,149 +26,118 @@ import {
   SidebarRail,
 } from '@/components/ui/sidebar';
 
-// This is sample data.
 const data = {
-  user: {
-    name: 'shadcn',
-    email: 'm@example.com',
-    avatar: '/avatars/shadcn.jpg',
-  },
-  teams: [
-    {
-      name: 'Acme Inc',
-      logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
-    },
-    {
-      name: 'Acme Corp.',
-      logo: AudioWaveform,
-      plan: 'Startup',
-    },
-    {
-      name: 'Evil Corp.',
-      logo: Command,
-      plan: 'Free',
-    },
-  ],
   navMain: [
     {
-      title: 'Playground',
+      title: 'Créer son compte eCampus France',
       url: '#',
       icon: SquareTerminal,
       isActive: true,
       items: [
-        {
-          title: 'History',
-          url: '#',
-        },
-        {
-          title: 'Starred',
-          url: '#',
-        },
-        {
-          title: 'Settings',
-          url: '#',
-        },
+        { title: 'Prérequis', url: '#' },
+        { title: 'Informations personnelles', url: '#' },
+        { title: 'Activation du compte', url: '#' },
       ],
     },
     {
-      title: 'Models',
+      title: 'Remplir son dossier',
       url: '#',
-      icon: Bot,
+      icon: FileText,
       items: [
-        {
-          title: 'Genesis',
-          url: '#',
-        },
-        {
-          title: 'Explorer',
-          url: '#',
-        },
-        {
-          title: 'Quantum',
-          url: '#',
-        },
+        { title: 'Etat civil', url: '#' },
+        { title: 'Parcours académique', url: '#' },
+        { title: 'Documents à fournir', url: '#' },
       ],
     },
     {
-      title: 'Documentation',
+      title: 'Faire son CV Campus France',
       url: '#',
-      icon: BookOpen,
+      icon: UserCircle,
       items: [
-        {
-          title: 'Introduction',
-          url: '#',
-        },
-        {
-          title: 'Get Started',
-          url: '#',
-        },
-        {
-          title: 'Tutorials',
-          url: '#',
-        },
-        {
-          title: 'Changelog',
-          url: '#',
-        },
+        { title: 'Structure du CV', url: '#' },
+        { title: 'Compétences', url: '#' },
+        { title: 'Expériences', url: '#' },
       ],
     },
     {
-      title: 'Settings',
+      title: 'Préparer l’entretien',
       url: '#',
-      icon: Settings2,
+      icon: MessageSquare,
       items: [
-        {
-          title: 'General',
-          url: '#',
-        },
-        {
-          title: 'Team',
-          url: '#',
-        },
-        {
-          title: 'Billing',
-          url: '#',
-        },
-        {
-          title: 'Limits',
-          url: '#',
-        },
+        { title: 'Questions fréquentes', url: '#' },
+        { title: 'Pièges à éviter', url: '#' },
+        { title: 'Conseils pratiques', url: '#' },
+      ],
+    },
+    {
+      title: 'Choisir ses formations',
+      url: '#',
+      icon: ListChecks,
+      items: [
+        { title: 'Comment filtrer les formations', url: '#' },
+        { title: 'Licence / Master / BTS', url: '#' },
+        { title: 'Sélection intelligente', url: '#' },
+      ],
+    },
+    {
+      title: 'Éviter les erreurs',
+      url: '#',
+      icon: AlertTriangle,
+      items: [
+        { title: 'Erreurs courantes', url: '#' },
+        { title: 'Documents non conformes', url: '#' },
+      ],
+    },
+    {
+      title: 'Suivre l’avancement du dossier',
+      url: '#',
+      icon: Hourglass,
+      items: [
+        { title: 'Étapes du processus', url: '#' },
+        { title: 'Comprendre chaque statut', url: '#' },
+      ],
+    },
+    {
+      title: 'Préparer le dépôt au consulat',
+      url: '#',
+      icon: Briefcase,
+      items: [
+        { title: 'Documents obligatoires', url: '#' },
+        { title: 'Jour du rendez-vous', url: '#' },
+      ],
+    },
+    {
+      title: 'Modèles de mails',
+      url: '#',
+      icon: Mail,
+      items: [
+        { title: 'Mail pour une université', url: '#' },
+        { title: 'Mail pour Campus France', url: '#' },
+        { title: 'Mail pour le consulat', url: '#' },
+      ],
+    },
+    {
+      title: 'Tutoriels vidéo',
+      url: '#',
+      icon: Video,
+      items: [
+        { title: 'Tutoriel création de dossier', url: '#' },
+        { title: 'Tutoriel entretien', url: '#' },
       ],
     },
   ],
-  projects: [
-    {
-      name: 'Design Engineering',
-      url: '#',
-      icon: Frame,
-    },
-    {
-      name: 'Sales & Marketing',
-      url: '#',
-      icon: PieChart,
-    },
-    {
-      name: 'Travel',
-      url: '#',
-      icon: Map,
-    },
-  ],
+  projects: [],
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
-      </SidebarHeader>
+      <SidebarHeader />
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
+        {/* NavProjects disabled for now */}
       </SidebarContent>
-      <SidebarFooter>
-        <NavUser user={data.user} />
-      </SidebarFooter>
+      <SidebarFooter />
       <SidebarRail />
     </Sidebar>
   );
