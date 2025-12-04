@@ -6,13 +6,11 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-black">
-      <div className="mx-auto flex h-12 max-w-7xl items-center justify-between py-8 text-sm">
-        <p className="text-slate-700 dark:text-slate-300">
-          &copy; Copyright {year}. All rights reserved.
-        </p>
+    <footer className="border-border bg-background border-t">
+      <div className="mx-auto flex h-12 w-full max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-xs sm:flex-row sm:px-6 sm:py-8 sm:text-sm">
+        <p className="text-muted-foreground">&copy; Copyright {year}.</p>
 
-        <p className="flex items-center gap-1 text-slate-700 dark:text-slate-300">
+        <p className="text-muted-foreground flex items-center gap-1">
           Hosted on
           <span className="flex items-center gap-1 font-semibold">
             <Image
