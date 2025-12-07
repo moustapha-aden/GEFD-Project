@@ -26,7 +26,7 @@ import {
   SidebarRail,
 } from '@/components/ui/sidebar';
 
-const data = {
+export const sidebarNavData = {
   navMain: [
     {
       title: 'Créer son compte eCampus France',
@@ -34,9 +34,13 @@ const data = {
       icon: SquareTerminal,
       isActive: true,
       items: [
-        { title: 'Prérequis', url: '#' },
-        { title: 'Informations personnelles', url: '#' },
-        { title: 'Activation du compte', url: '#' },
+        { id: 'prerequis-compte', title: 'Prérequis', url: '#' },
+        {
+          id: 'infos-personnelles',
+          title: 'Informations personnelles',
+          url: '#',
+        },
+        { id: 'activation-compte', title: 'Activation du compte', url: '#' },
       ],
     },
     {
@@ -44,9 +48,9 @@ const data = {
       url: '#',
       icon: FileText,
       items: [
-        { title: 'Etat civil', url: '#' },
-        { title: 'Parcours académique', url: '#' },
-        { title: 'Documents à fournir', url: '#' },
+        { id: 'etat-civil', title: 'Etat civil', url: '#' },
+        { id: 'parcours-academique', title: 'Parcours académique', url: '#' },
+        { id: 'documents-dossier', title: 'Documents à fournir', url: '#' },
       ],
     },
     {
@@ -54,9 +58,9 @@ const data = {
       url: '#',
       icon: UserCircle,
       items: [
-        { title: 'Structure du CV', url: '#' },
-        { title: 'Compétences', url: '#' },
-        { title: 'Expériences', url: '#' },
+        { id: 'cv-structure', title: 'Structure du CV', url: '#' },
+        { id: 'cv-competences', title: 'Compétences', url: '#' },
+        { id: 'cv-experiences', title: 'Expériences', url: '#' },
       ],
     },
     {
@@ -64,9 +68,9 @@ const data = {
       url: '#',
       icon: MessageSquare,
       items: [
-        { title: 'Questions fréquentes', url: '#' },
-        { title: 'Pièges à éviter', url: '#' },
-        { title: 'Conseils pratiques', url: '#' },
+        { id: 'entretien-questions', title: 'Questions fréquentes', url: '#' },
+        { id: 'entretien-pieges', title: 'Pièges à éviter', url: '#' },
+        { id: 'entretien-conseils', title: 'Conseils pratiques', url: '#' },
       ],
     },
     {
@@ -74,9 +78,17 @@ const data = {
       url: '#',
       icon: ListChecks,
       items: [
-        { title: 'Comment filtrer les formations', url: '#' },
-        { title: 'Licence / Master / BTS', url: '#' },
-        { title: 'Sélection intelligente', url: '#' },
+        {
+          id: 'formations-filtrer',
+          title: 'Comment filtrer les formations',
+          url: '#',
+        },
+        { id: 'formations-types', title: 'Licence / Master / BTS', url: '#' },
+        {
+          id: 'formations-selection',
+          title: 'Sélection intelligente',
+          url: '#',
+        },
       ],
     },
     {
@@ -84,8 +96,12 @@ const data = {
       url: '#',
       icon: AlertTriangle,
       items: [
-        { title: 'Erreurs courantes', url: '#' },
-        { title: 'Documents non conformes', url: '#' },
+        { id: 'erreurs-courantes', title: 'Erreurs courantes', url: '#' },
+        {
+          id: 'erreurs-documents',
+          title: 'Documents non conformes',
+          url: '#',
+        },
       ],
     },
     {
@@ -93,8 +109,12 @@ const data = {
       url: '#',
       icon: Hourglass,
       items: [
-        { title: 'Étapes du processus', url: '#' },
-        { title: 'Comprendre chaque statut', url: '#' },
+        { id: 'dossier-etapes', title: 'Étapes du processus', url: '#' },
+        {
+          id: 'dossier-statuts',
+          title: 'Comprendre chaque statut',
+          url: '#',
+        },
       ],
     },
     {
@@ -102,8 +122,16 @@ const data = {
       url: '#',
       icon: Briefcase,
       items: [
-        { title: 'Documents obligatoires', url: '#' },
-        { title: 'Jour du rendez-vous', url: '#' },
+        {
+          id: 'consulat-documents',
+          title: 'Documents obligatoires',
+          url: '#',
+        },
+        {
+          id: 'consulat-rdv',
+          title: 'Jour du rendez-vous',
+          url: '#',
+        },
       ],
     },
     {
@@ -111,9 +139,13 @@ const data = {
       url: '#',
       icon: Mail,
       items: [
-        { title: 'Mail pour une université', url: '#' },
-        { title: 'Mail pour Campus France', url: '#' },
-        { title: 'Mail pour le consulat', url: '#' },
+        {
+          id: 'mail-universite',
+          title: 'Mail pour une université',
+          url: '#',
+        },
+        { id: 'mail-campus-france', title: 'Mail pour Campus France', url: '#' },
+        { id: 'mail-consulat', title: 'Mail pour le consulat', url: '#' },
       ],
     },
     {
@@ -121,20 +153,37 @@ const data = {
       url: '#',
       icon: Video,
       items: [
-        { title: 'Tutoriel création de dossier', url: '#' },
-        { title: 'Tutoriel entretien', url: '#' },
+        {
+          id: 'video-dossier',
+          title: 'Tutoriel création de dossier',
+          url: '#',
+        },
+        { id: 'video-entretien', title: 'Tutoriel entretien', url: '#' },
       ],
     },
   ],
   projects: [],
 };
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+type AppSidebarProps = React.ComponentProps<typeof Sidebar> & {
+  activeItemId?: string;
+  onItemSelect?: (id: string) => void;
+};
+
+export function AppSidebar({
+  activeItemId,
+  onItemSelect,
+  ...props
+}: AppSidebarProps) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader />
       <SidebarContent>
-        <NavMain items={data.navMain} />
+        <NavMain
+          items={sidebarNavData.navMain}
+          activeItemId={activeItemId}
+          onItemSelect={onItemSelect}
+        />
         {/* NavProjects disabled for now */}
       </SidebarContent>
       <SidebarFooter />

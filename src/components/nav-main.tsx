@@ -20,6 +20,8 @@ import {
 
 export function NavMain({
   items,
+  activeItemId,
+  onItemSelect,
 }: {
   items: {
     title: string;
@@ -27,10 +29,13 @@ export function NavMain({
     icon?: LucideIcon;
     isActive?: boolean;
     items?: {
+      id: string;
       title: string;
       url: string;
     }[];
   }[];
+  activeItemId?: string;
+  onItemSelect?: (id: string) => void;
 }) {
   return (
     <SidebarGroup>
@@ -53,15 +58,32 @@ export function NavMain({
               </CollapsibleTrigger>
               <CollapsibleContent>
                 <SidebarMenuSub>
-                  {item.items?.map((subItem) => (
-                    <SidebarMenuSubItem key={subItem.title}>
-                      <SidebarMenuSubButton asChild>
-                        <a href={subItem.url}>
-                          <span>{subItem.title}</span>
-                        </a>
-                      </SidebarMenuSubButton>
-                    </SidebarMenuSubItem>
-                  ))}
+                  {item.items?.map((subItem) => {
+                    const isActive = subItem.id === activeItemId;
+                    return (
+                      <SidebarMenuSubItem key={subItem.id}>
+                        <SidebarMenuSubButton
+                          asChild={!onItemSelect}
+                          isActive={isActive}
+                          onClick={
+                            onItemSelect
+                              ? () => onItemSelect(subItem.id)
+                              : undefined
+                          }
+                        >
+                          {onItemSelect ? (
+                            <button className="w-full text-left">
+                              <span>{subItem.title}</span>
+                            </button>
+                          ) : (
+                            <a href={subItem.url}>
+                              <span>{subItem.title}</span>
+                            </a>
+                          )}
+                        </SidebarMenuSubButton>
+                      </SidebarMenuSubItem>
+                    );
+                  })}
                 </SidebarMenuSub>
               </CollapsibleContent>
             </SidebarMenuItem>
