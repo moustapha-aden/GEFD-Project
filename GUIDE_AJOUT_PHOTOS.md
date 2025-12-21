@@ -1,6 +1,6 @@
 # Guide pour ajouter des photos dans la documentation
 
-## ✅ Ce qui a été fait
+##  Ce qui a été fait
 
 Tous les placeholders ont été remplacés par la syntaxe Markdown correcte pour les images. Les images sont maintenant prêtes à être ajoutées !
 
@@ -12,27 +12,27 @@ Le dossier `public/images/docs/` a été créé pour stocker toutes vos images.
 
 Voici la liste des 13 images à ajouter dans le dossier `public/images/docs/` :
 
-### Étape 1 : Création du compte
+###   1 : Création du compte
 1. **ecampusfrance-accueil.jpg** - Capture d'écran de la page d'accueil E-Campus France
 2. **formulaire-inscription-ecampus.jpg** - Capture d'écran du formulaire d'inscription
 
-### Étape 2 : Recherche de formations
+###   2 : Recherche de formations
 3. **recherche-formations-ecampus.jpg** - Capture d'écran de la page de recherche
 
-### Étape 3 : Documents académiques
+###   3 : Documents académiques
 4. **exemple-diplome-bac.jpg** - Exemple de diplôme (⚠️ masquer les données personnelles)
 5. **exemple-releve-notes.jpg** - Exemple de relevé de notes (⚠️ masquer les données personnelles)
 
-### Étape 4 : Documents administratifs
+###   4 : Documents administratifs
 6. **exemple-photo-identite.jpg** - Exemple de photo d'identité conforme (format 35x45mm)
 
-### Étape 6 : Soumission
+###   6 : Soumission
 7. **soumission-dossier-ecampus.jpg** - Capture d'écran de la page de soumission
 
-### Étape 7 : Entretien
+###   7 : Entretien
 8. **entretien-campus-france.jpg** - Photo d'entretien ou illustration (⚠️ autorisation nécessaire si photo réelle)
 
-### Étape 8 : Après l'admission
+###   8 : Après l'admission
 9. **lettre-admission-exemple.jpg** - Exemple de lettre d'admission (⚠️ masquer les données personnelles)
 10. **consulat-visa-processus.jpg** - Photo du consulat ou illustration du processus
 11. **residence-etudiante-crous.jpg** - Photo d'une résidence étudiante CROUS
@@ -74,9 +74,9 @@ Pour les images contenant des informations personnelles :
 - Évitez les informations sensibles dans les captures
 - Redimensionnez si nécessaire pour optimiser la taille
 
-## ✅ Exemple
+##  Exemple
 
-Une fois que vous avez ajouté `ecampusfrance-accueil.jpg` dans `public/images/docs/`, l'image apparaîtra automatiquement dans la documentation à l'étape 1, section "Accès à la plateforme".
+Une fois que vous avez ajouté `ecampusfrance-accueil.jpg` dans `public/images/docs/`, l'image apparaîtra automatiquement dans la documentation à l'  1, section "Accès à la plateforme".
 
 ## 📍 Emplacement actuel
 
@@ -90,4 +90,5 @@ Il vous suffit d'ajouter les fichiers images dans le dossier `public/images/docs
 ---
 
 **Besoin d'aide ?** Consultez le fichier `PLACEHOLDERS_PHOTOS.md` à la racine du projet pour plus de détails.
+
 
