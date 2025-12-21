@@ -17,7 +17,7 @@ Pour ajouter une photo, remplacez le commentaire par :
 
 ## Liste des emplacements
 
-### Étape 1 : Création du compte
+###   1 : Création du compte
 
 1. **Page d'accueil E-Campus France**
    - Fichier: `content/docs/etape-1-creation-compte.mdx`
@@ -31,7 +31,7 @@ Pour ajouter une photo, remplacez le commentaire par :
    - Suggestion: Capture d'écran du formulaire d'inscription
    - Image: `formulaire-inscription-ecampus.jpg`
 
-### Étape 2 : Recherche de formations
+###   2 : Recherche de formations
 
 3. **Page de recherche de formations**
    - Fichier: `content/docs/etape-2-recherche-formations.mdx`
@@ -39,7 +39,7 @@ Pour ajouter une photo, remplacez le commentaire par :
    - Suggestion: Capture d'écran de la page de recherche avec les filtres
    - Image: `recherche-formations-ecampus.jpg`
 
-### Étape 3 : Documents académiques
+###   3 : Documents académiques
 
 4. **Exemple de diplôme**
    - Fichier: `content/docs/etape-3-documents-academiques.mdx`
@@ -53,7 +53,7 @@ Pour ajouter une photo, remplacez le commentaire par :
    - Suggestion: Exemple de relevé de notes (avec données masquées)
    - Image: `exemple-releve-notes.jpg`
 
-### Étape 4 : Documents administratifs
+###   4 : Documents administratifs
 
 6. **Exemple de photo d'identité conforme**
    - Fichier: `content/docs/etape-4-documents-administratifs.mdx`
@@ -61,7 +61,7 @@ Pour ajouter une photo, remplacez le commentaire par :
    - Suggestion: Exemple de photo d'identité au format 35x45mm
    - Image: `exemple-photo-identite.jpg`
 
-### Étape 6 : Soumission du dossier
+###   6 : Soumission du dossier
 
 7. **Page de soumission**
    - Fichier: `content/docs/etape-6-soumission.mdx`
@@ -69,7 +69,7 @@ Pour ajouter une photo, remplacez le commentaire par :
    - Suggestion: Capture d'écran de la page de soumission avec le bouton
    - Image: `soumission-dossier-ecampus.jpg`
 
-### Étape 7 : Entretien Campus France
+###   7 : Entretien Campus France
 
 8. **Illustration de l'entretien**
    - Fichier: `content/docs/etape-7-entretien.mdx`
@@ -77,7 +77,7 @@ Pour ajouter une photo, remplacez le commentaire par :
    - Suggestion: Photo d'un entretien (avec autorisation) ou illustration
    - Image: `entretien-campus-france.jpg`
 
-### Étape 8 : Après l'admission
+###   8 : Après l'admission
 
 9. **Exemple de lettre d'admission**
    - Fichier: `content/docs/etape-8-apres-admission.mdx`
@@ -175,4 +175,5 @@ public/
         ├── colocation-etudiante.jpg
         └── studio-etudiant.jpg
 ```
+
 

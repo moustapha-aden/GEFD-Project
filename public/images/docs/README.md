@@ -29,3 +29,4 @@ Placez ici toutes les images utilisées dans la documentation.
 
 ⚠️ **Important** : Pour les exemples de documents (diplômes, relevés, lettres), masquez TOUTES les informations personnelles avant de les ajouter.
 
+

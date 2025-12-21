@@ -10,38 +10,38 @@
 
 Voici la liste complète des **13 images** nécessaires :
 
-### Étape 1 : Création du compte
+###   1 : Création du compte
 1. **ecampusfrance-accueil.jpg** - Capture d'écran de la page d'accueil E-Campus France
 2. **formulaire-inscription-ecampus.jpg** - Capture d'écran du formulaire d'inscription
 
-### Étape 2 : Recherche de formations
+###   2 : Recherche de formations
 3. **recherche-formations-ecampus.jpg** - Capture d'écran de la page de recherche avec les filtres
 
-### Étape 3 : Documents académiques
+###   3 : Documents académiques
 4. **exemple-diplome-bac.jpg** - Exemple de diplôme (⚠️ masquer toutes les données personnelles)
 5. **exemple-releve-notes.jpg** - Exemple de relevé de notes (⚠️ masquer toutes les données personnelles)
 
-### Étape 4 : Documents administratifs
+###   4 : Documents administratifs
 6. **exemple-photo-identite.jpg** - Exemple de photo d'identité conforme (format 35x45mm)
 
-### Étape 6 : Soumission
+###   6 : Soumission
 7. **soumission-dossier-ecampus.jpg** - Capture d'écran de la page de soumission avec le bouton "Soumettre"
 
-### Étape 7 : Entretien
+###   7 : Entretien
 8. **entretien-campus-france.jpg** - Photo d'entretien ou illustration (⚠️ autorisation nécessaire si photo réelle)
 
-### Étape 8 : Après l'admission
+###   8 : Après l'admission
 9. **lettre-admission-exemple.jpg** - Exemple de lettre d'admission (⚠️ masquer toutes les données personnelles)
 10. **consulat-visa-processus.jpg** - Photo du consulat ou illustration du processus de visa
 11. **residence-etudiante-crous.jpg** - Photo d'une résidence étudiante CROUS
 12. **colocation-etudiante.jpg** - Photo d'une colocation étudiante
 13. **studio-etudiant.jpg** - Photo d'un studio étudiant
 
-## ✅ Bonne nouvelle
+##  Bonne nouvelle
 
 **Aucune erreur de build** : Toutes les références aux images ont été retirées des fichiers MDX. Le projet compile sans erreur, même sans les images.
 
-## 🎯 Comment ajouter les images
+##  Comment ajouter les images
 
 ### 1. Préparer vos images
 - **Format** : JPG ou PNG
