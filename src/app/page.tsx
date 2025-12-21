@@ -28,7 +28,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Link href="/dashboard">
+              <Link href="/docs">
                 <Button
                   size="lg"
                   className="w-full px-8 py-6 text-base sm:w-auto sm:px-10 sm:py-6 sm:text-lg"
@@ -58,13 +58,13 @@ export default function Home() {
 
             <div className="text-muted-foreground space-y-4 text-base sm:text-lg md:space-y-6">
               <p>
-                Beaucoup d&apos;étudiants se retrouvent perdus dans les étapes
+                Beaucoup d&apos;étudiants se retrouvent perdus dans les  s
                 Campus France : documents obligatoires, calendrier, erreurs
-                fréquentes, étapes mal expliquées…
+                fréquentes,  s mal expliquées…
               </p>
 
               <p>
-                Cette plateforme simplifie tout en te guidant étape par étape
+                Cette plateforme simplifie tout en te guidant   par  
                 avec des explications simples, des checklists, des conseils, des
                 exemples et un suivi personnalisé.
               </p>
@@ -82,10 +82,10 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
               <div className="bg-card rounded-2xl p-6 text-center shadow-lg transition-colors sm:p-8">
                 <h3 className="text-primary mb-3 text-lg font-semibold sm:text-xl">
-                  ✔️ Étapes expliquées
+                  ✔️  s expliquées
                 </h3>
                 <p className="text-muted-foreground text-sm sm:text-base">
-                  Chaque étape du parcours Campus France expliquée simplement
+                  Chaque   du parcours Campus France expliquée simplement
                   pour éviter les erreurs.
                 </p>
               </div>
@@ -105,7 +105,7 @@ export default function Home() {
                   ✔️ Suivi de progression
                 </h3>
                 <p className="text-muted-foreground text-sm sm:text-base">
-                  Avance étape par étape et vois ton évolution clairement dans
+                  Avance   par   et vois ton évolution clairement dans
                   ton tableau de bord.
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function Home() {
               Laisse-nous t&apos;accompagner du début jusqu&apos;à la validation
               finale.
             </p>
-            <Link href="/dashboard">
+            <Link href="/docs">
               <Button size="lg" className="w-full sm:w-auto">
                 Accéder au guide complet
               </Button>

@@ -109,7 +109,7 @@ export const sidebarNavData = {
       url: '#',
       icon: Hourglass,
       items: [
-        { id: 'dossier-etapes', title: 'Étapes du processus', url: '#' },
+        { id: 'dossier-etapes', title: ' s du processus', url: '#' },
         {
           id: 'dossier-statuts',
           title: 'Comprendre chaque statut',

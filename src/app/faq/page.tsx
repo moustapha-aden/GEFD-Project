@@ -26,14 +26,14 @@ const faqs = [
       "E-Campus France est la plateforme officielle de candidature pour les études supérieures en France. Elle permet aux étudiants internationaux de postuler à des formations dans les établissements français d'enseignement supérieur.",
   },
   {
-    question: "Combien d'étapes dois-je compléter ?",
+    question: "Combien d' s dois-je compléter ?",
     answer:
-      'Le processus comprend 6 étapes principales : la création du compte, la recherche de formations, la préparation des documents académiques et administratifs, la rédaction du projet motivé, et la soumission finale du dossier.',
+      'Le processus comprend 6  s principales : la création du compte, la recherche de formations, la préparation des documents académiques et administratifs, la rédaction du projet motivé, et la soumission finale du dossier.',
   },
   {
     question: "Puis-je modifier mon dossier après l'avoir soumis ?",
     answer:
-      'Une fois soumis, certains éléments du dossier ne peuvent plus être modifiés. Il est donc crucial de vérifier attentivement tous les documents et informations avant de finaliser votre candidature. Nous vous recommandons de compléter chaque étape avec soin.',
+      'Une fois soumis, certains éléments du dossier ne peuvent plus être modifiés. Il est donc crucial de vérifier attentivement tous les documents et informations avant de finaliser votre candidature. Nous vous recommandons de compléter chaque   avec soin.',
   },
   {
     question: 'Combien de formations puis-je choisir ?',
@@ -48,7 +48,7 @@ const faqs = [
   {
     question: 'Comment puis-je suivre ma progression ?',
     answer:
-      'Utilisez notre tableau de bord pour suivre votre progression en temps réel. Vous verrez quelles étapes sont terminées, en cours, ou à faire. Les checklists vous aideront également à ne rien oublier.',
+      'Utilisez notre tableau de bord pour suivre votre progression en temps réel. Vous verrez quelles  s sont terminées, en cours, ou à faire. Les checklists vous aideront également à ne rien oublier.',
   },
   {
     question: "Que faire si j'ai des questions ?",
