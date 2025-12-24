@@ -38,7 +38,7 @@ const faqs = [
   {
     question: 'Combien de formations puis-je choisir ?',
     answer:
-      "Sur la plateforme E-Campus France, vous pouvez sélectionner jusqu'à 15 vœux de formations. Il est important de bien réfléchir à vos choix et de vérifier les prérequis de chaque formation.",
+      "Sur la plateforme E-Campus France, vous pouvez sélectionner jusqu'à  7 vœux de formations. Il est important de bien réfléchir à vos choix et de vérifier les prérequis de chaque formation.",
   },
   {
     question: 'Quels documents sont nécessaires ?',
