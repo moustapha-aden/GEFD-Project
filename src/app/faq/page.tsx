@@ -21,9 +21,9 @@ import { HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: "Qu'est-ce que Ecampus France ?",
+    question: "Qu'est-ce que E-Campus France ?",
     answer:
-      "Ecampus France est la plateforme officielle de candidature pour les études supérieures en France. Elle permet aux étudiants internationaux de postuler à des formations dans les établissements français d'enseignement supérieur.",
+      "E-Campus France est la plateforme officielle de candidature pour les études supérieures en France. Elle permet aux étudiants internationaux de postuler à des formations dans les établissements français d'enseignement supérieur.",
   },
   {
     question: "Combien d' s dois-je compléter ?",
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: 'Combien de formations puis-je choisir ?',
     answer:
-      "Sur la plateforme Ecampus France, vous pouvez sélectionner jusqu'à 15 vœux de formations. Il est important de bien réfléchir à vos choix et de vérifier les prérequis de chaque formation.",
+      "Sur la plateforme E-Campus France, vous pouvez sélectionner jusqu'à  7 vœux de formations. Il est important de bien réfléchir à vos choix et de vérifier les prérequis de chaque formation.",
   },
   {
     question: 'Quels documents sont nécessaires ?',
@@ -53,7 +53,7 @@ const faqs = [
   {
     question: "Que faire si j'ai des questions ?",
     answer:
-      'Consultez notre section FAQ pour les questions fréquentes. Pour des questions spécifiques, vous pouvez utiliser notre formulaire de contact ou vous référer aux ressources officielles de Ecampus France.',
+      'Consultez notre section FAQ pour les questions fréquentes. Pour des questions spécifiques, vous pouvez utiliser notre formulaire de contact ou vous référer aux ressources officielles de Campus France.',
   },
   {
     question: 'La plateforme est-elle gratuite ?',
@@ -90,7 +90,7 @@ export default function FAQPage() {
               </h1>
               <p className="text-muted-foreground mx-auto max-w-2xl text-base leading-relaxed sm:text-lg">
                 Trouvez les réponses aux questions les plus courantes sur le
-                processus Ecampus France
+                processus E-Campus France
               </p>
             </div>
 
@@ -146,7 +146,7 @@ export default function FAQPage() {
                     rel="noopener noreferrer"
                     className="text-primary font-medium hover:underline"
                   >
-                    Ecampus France
+                    Campus France
                   </a>
                   .
                 </p>
