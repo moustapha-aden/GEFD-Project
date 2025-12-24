@@ -1,14 +1,22 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
-import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/sonner';
 import { RootProvider } from 'fumadocs-ui/provider/next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'GEFD - Guide Ecampus France Djibouti',
+  title: {
+    default: 'GEFD - Guide Ecampus France Djibouti',
+    template: '%s | GEFD - Guide Ecampus France Djibouti',
+  },
   description:
     "Ce site est un guide pour les étudiants de l'Ecampus France Djibouti.",
+  metadataBase: new URL('https://gefd-project.vercel.app'),
+  openGraph: {
+    title: 'GEFD - Guide Ecampus France Djibouti',
+    description:
+      "Ce site est un guide pour les étudiants de l'Ecampus France Djibouti.",
+  },
 };
 
 export default function RootLayout({

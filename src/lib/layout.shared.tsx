@@ -5,9 +5,5 @@ export function baseOptions(): BaseLayoutProps {
     nav: {
       title: 'GEFD Guide',
     },
-    search: {
-      enabled: true,
-    },
   };
 }
-

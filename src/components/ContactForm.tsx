@@ -9,7 +9,6 @@ import { Send, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
-// Zod validation schema
 const contactFormSchema = z.object({
   name: z
     .string()
@@ -26,7 +25,6 @@ const contactFormSchema = z.object({
 type ContactFormData = z.infer<typeof contactFormSchema>;
 
 interface ContactFormProps {
-  // EmailJS configuration - these should be set as environment variables
   emailjsServiceId?: string;
   emailjsTemplateId?: string;
   emailjsPublicKey?: string;
@@ -53,7 +51,6 @@ export function ContactForm({
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Check if EmailJS is configured
     if (!emailjsServiceId || !emailjsTemplateId || !emailjsPublicKey) {
       throw new Error(
         "Configuration EmailJS manquante. Veuillez configurer les variables d'environnement."
@@ -61,7 +58,6 @@ export function ContactForm({
     }
 
     try {
-      // Prepare template parameters for EmailJS
       const templateParams = {
         name: data.name,
         email: data.email,
@@ -70,7 +66,6 @@ export function ContactForm({
         time: new Date().toString(),
       };
 
-      // Send email using EmailJS
       await emailjs.send(
         emailjsServiceId,
         emailjsTemplateId,
@@ -78,12 +73,10 @@ export function ContactForm({
         emailjsPublicKey
       );
 
-      // Success notification
       toast.success(
         'Message envoyé avec succès ! Nous vous répondrons bientôt.'
       );
 
-      // Reset form
       reset();
     } catch (error) {
       console.error('EmailJS error:', error);

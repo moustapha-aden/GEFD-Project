@@ -71,9 +71,9 @@ export default function ContactPage() {
                   <strong className="text-foreground">
                     Questions techniques :
                   </strong>{' '}
-                  Pour les problèmes liés à la plateforme E-Campus France
+                  Pour les problèmes liés à la plateforme Ecampus France
                   officielle, nous vous recommandons de contacter directement le
-                  support de Campus France.
+                  support de Ecampus France.
                 </p>
                 <p>
                   <strong className="text-foreground">Confidentialité :</strong>{' '}
